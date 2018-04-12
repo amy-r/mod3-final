@@ -11,7 +11,6 @@ class App extends Component {
 
   componentDidMount = async () => {
     const houses = await fetchApi();
-    console.log(houses)
     this.props.addHouses(houses)
   }
 

@@ -4,6 +4,6 @@ export const fetchApi = async () => {
     const houses = await response.json();
     return houses
   } catch (error) {
-    throw new Error('error getting houses')
+    throw new Error(`error getting houses + ${error}`)
   }
 }
