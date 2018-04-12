@@ -19,7 +19,6 @@ class Card extends Component {
     })
     const names = await Promise.all(members)
     this.setState({ names })
-    console.log(this.state.names)
   }
 
   componentDidMount = () => {
