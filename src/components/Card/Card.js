@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { getMembers } from '../../helper/helper';
+import './Card.css'
 
 class Card extends Component {
   constructor() {
@@ -27,10 +28,10 @@ class Card extends Component {
   showMembers = () => {
     if (this.state.names.length) {
       return this.state.names.map( (name) => {
-        <p> name </p>
-      })
-    } 
+        return <p className='name'> {name}, </p>
+      })    
   }
+}
 
   render() {
     const {name, founded, seats, titles, coatOfArms, ancestralWeapons, words, swornMembers} = this.props
@@ -43,7 +44,10 @@ class Card extends Component {
         <p> Coat Of Arms: {coatOfArms} </p>
         <p> Ancestral Weapons: {ancestralWeapons} </p> 
         <p> Words: {words} </p>
-        <p> Sworn Members:  {this.showMembers}</p>
+        <p  > Sworn Members:</p> 
+        <div className = 'members'>
+          {this.showMembers()}
+        </div>  
       </div>
     )
   }
