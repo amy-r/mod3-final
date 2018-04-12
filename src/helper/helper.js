@@ -4,7 +4,7 @@ export const fetchApi = async () => {
     const houses = await response.json();
     return houses
   } catch (error) {
-    throw new Error(`error getting houses + ${error}`)
+    throw new Error('error getting houses')
   }
 }
 
@@ -14,6 +14,6 @@ export const getMembers = async (url) => {
     const members = await response.json();
     return members
   } catch (error) {
-    throw new Error(`error getting members + ${error}`)
+    throw new Error('error getting members')
   }
 }

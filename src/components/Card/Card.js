@@ -31,8 +31,8 @@ class Card extends Component {
       return this.state.names.map( (name) => {
         return <p className='name'> {name}, </p>
       })    
+    }
   }
-}
 
   render() {
     const {name, founded, seats, titles, coatOfArms, ancestralWeapons, words, swornMembers} = this.props
@@ -52,9 +52,8 @@ class Card extends Component {
       </div>
     )
   }
-
-
 }
+
 Card.propTypes = {
   name: PropTypes.string.isRequired,
   founded: PropTypes.string.isRequired,

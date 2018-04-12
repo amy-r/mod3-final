@@ -1,0 +1,486 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    ancestralWeapons={
+        Array [
+            "fake",
+          ]
+    }
+    coatOfArms="fake"
+    founded="fake"
+    name="fake"
+    seats={
+        Array [
+            "fake",
+          ]
+    }
+    swornMembers={
+        Array [
+            "fake",
+          ]
+    }
+    titles={
+        Array [
+            "fake",
+          ]
+    }
+    words="fake"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+           
+          fake
+           
+</h2>,
+        <h3>
+           Founded: 
+          fake
+           
+</h3>,
+        <p>
+           Seats: 
+          fake
+           
+</p>,
+        <p>
+           Titles: 
+          fake
+           
+</p>,
+        <p>
+           Coat Of Arms: 
+          fake
+           
+</p>,
+        <p>
+           Ancestral Weapons: 
+          fake
+           
+</p>,
+        <p>
+           Words: 
+          fake
+           
+</p>,
+        <p>
+           Sworn Members:
+</p>,
+        <div
+          className="members"
+/>,
+      ],
+      "className": "Card",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            "fake",
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          "fake",
+          " ",
+        ],
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " Founded: ",
+            "fake",
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " Founded: ",
+          "fake",
+          " ",
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " Seats: ",
+            Array [
+              "fake",
+            ],
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " Seats: ",
+          "fake",
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " Titles: ",
+            Array [
+              "fake",
+            ],
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " Titles: ",
+          "fake",
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " Coat Of Arms: ",
+            "fake",
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " Coat Of Arms: ",
+          "fake",
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " Ancestral Weapons: ",
+            Array [
+              "fake",
+            ],
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " Ancestral Weapons: ",
+          "fake",
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " Words: ",
+            "fake",
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " Words: ",
+          "fake",
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " Sworn Members:",
+        },
+        "ref": null,
+        "rendered": " Sworn Members:",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "members",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+             
+            fake
+             
+</h2>,
+          <h3>
+             Founded: 
+            fake
+             
+</h3>,
+          <p>
+             Seats: 
+            fake
+             
+</p>,
+          <p>
+             Titles: 
+            fake
+             
+</p>,
+          <p>
+             Coat Of Arms: 
+            fake
+             
+</p>,
+          <p>
+             Ancestral Weapons: 
+            fake
+             
+</p>,
+          <p>
+             Words: 
+            fake
+             
+</p>,
+          <p>
+             Sworn Members:
+</p>,
+          <div
+            className="members"
+/>,
+        ],
+        "className": "Card",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              "fake",
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            "fake",
+            " ",
+          ],
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " Founded: ",
+              "fake",
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " Founded: ",
+            "fake",
+            " ",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " Seats: ",
+              Array [
+                "fake",
+              ],
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " Seats: ",
+            "fake",
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " Titles: ",
+              Array [
+                "fake",
+              ],
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " Titles: ",
+            "fake",
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " Coat Of Arms: ",
+              "fake",
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " Coat Of Arms: ",
+            "fake",
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " Ancestral Weapons: ",
+              Array [
+                "fake",
+              ],
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " Ancestral Weapons: ",
+            "fake",
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " Words: ",
+              "fake",
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " Words: ",
+            "fake",
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Sworn Members:",
+          },
+          "ref": null,
+          "rendered": " Sworn Members:",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "members",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
