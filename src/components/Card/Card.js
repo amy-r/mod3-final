@@ -1,17 +1,51 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { getMembers } from '../../helper/helper';
 
-const Card = ({ name, founded, seats, titles, coatOfArms, ancestralWeapons, words }) => {
-  return (
-    <div className ='Card'>
-      <h2> {name} </h2>
-      <h3> Founded: {founded} </h3>
-      <p> Seats: {seats} </p>
-      <p> Titles: {titles} </p>
-      <p> Coat Of Arms: {coatOfArms} </p>
-      <p> Ancestral Weapons: {ancestralWeapons} </p> 
-      <p> Words: {words} </p>
-    </div>
-  )
+class Card extends Component {
+  constructor() {
+    super();
+    this.state = {
+      swornMembers: [],
+      names: []
+    }
+  }
+    
+  handleClick = async () => {
+    const members = await this.state.swornMembers.map( async (url)  => {
+      const response = await getMembers(url);
+      return response.name
+    })
+    const names = await Promise.all(members)
+    this.setState({ names })
+    console.log(this.state.names)
+  }
+
+  componentDidMount = () => {
+    this.setState({swornMembers: this.props.swornMembers})
+  }
+
+  showMembers = () => {
+    if (this.state.names.length) {
+      return this.state.names.map( (name) => {
+        <p> name </p>
+      })
+    } 
+  }
+
+  render() {
+    const {name, founded, seats, titles, coatOfArms, ancestralWeapons, words, swornMembers} = this.props
+    return (
+      <div className ='Card' onClick ={this.handleClick}>
+        <h2> {name} </h2>
+        <h3> Founded: {founded} </h3>
+        <p> Seats: {seats} </p>
+        <p> Titles: {titles} </p>
+        <p> Coat Of Arms: {coatOfArms} </p>
+        <p> Ancestral Weapons: {ancestralWeapons} </p> 
+        <p> Words: {words} </p>
+        <p> Sworn Members:  {this.showMembers}</p>
+      </div>
+    )
+  }
 }
-
 export default Card;

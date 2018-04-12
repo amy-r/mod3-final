@@ -19,8 +19,8 @@ class App extends Component {
     const houses = await fetchApi();
     this.props.addHouses(houses)
     this.setState({loading: false})
-    console.log(this.state.loading)
   }
+
   toDisplay = () => {
     if (this.state.loading) {
         return <img src ={wolf} />
@@ -28,6 +28,7 @@ class App extends Component {
       return <CardContainer />
     }
   }
+
   render() {
     return (
       <div className='App'>

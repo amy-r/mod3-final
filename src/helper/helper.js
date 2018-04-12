@@ -7,3 +7,13 @@ export const fetchApi = async () => {
     throw new Error(`error getting houses + ${error}`)
   }
 }
+
+export const getMembers = async (url) => {
+  try {
+    const response = await fetch(url);
+    const members = await response.json();
+    return members
+  } catch (error) {
+    throw new Error(`error getting members + ${error}`)
+  }
+}
