@@ -8,12 +8,26 @@ import { fetchApi } from '../../helper/helper';
 import wolf from '../../wolf.gif';
 import CardContainer from '../CardContainer/CardContainer'
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      loading: true
+    }
+  }
 
   componentDidMount = async () => {
     const houses = await fetchApi();
     this.props.addHouses(houses)
+    this.setState({loading: false})
+    console.log(this.state.loading)
   }
-
+  toDisplay = () => {
+    if (this.state.loading) {
+        return <img src ={wolf} />
+    } else {
+      return <CardContainer />
+    }
+  }
   render() {
     return (
       <div className='App'>
@@ -26,7 +40,7 @@ class App extends Component {
           }}> FAKE ACTION</button>
         </div>
         <div className='Display-info'>
-        <CardContainer />
+          {this.toDisplay()}
         </div>
       </div>
     );
