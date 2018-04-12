@@ -5,8 +5,10 @@ import './App.css';
 import { connect } from 'react-redux';
 import { fakeAction, addHouses } from '../../actions';
 import { fetchApi } from '../../helper/helper';
-
+import wolf from '../../wolf.gif';
+import CardContainer from '../CardContainer/CardContainer'
 class App extends Component {
+
   componentDidMount = async () => {
     const houses = await fetchApi();
     console.log(houses)
@@ -25,6 +27,7 @@ class App extends Component {
           }}> FAKE ACTION</button>
         </div>
         <div className='Display-info'>
+        <CardContainer />
         </div>
       </div>
     );
