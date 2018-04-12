@@ -44,7 +44,7 @@ class Card extends Component {
         <p> Coat Of Arms: {coatOfArms} </p>
         <p> Ancestral Weapons: {ancestralWeapons} </p> 
         <p> Words: {words} </p>
-        <p  > Sworn Members:</p> 
+        <p> Sworn Members:</p> 
         <div className = 'members'>
           {this.showMembers()}
         </div>  

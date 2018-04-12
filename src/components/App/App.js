@@ -3,7 +3,7 @@ import PropTypes, { shape, func, string } from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
-import { fakeAction, addHouses } from '../../actions';
+import { addHouses } from '../../actions';
 import { fetchApi } from '../../helper/helper';
 import wolf from '../../wolf.gif';
 import CardContainer from '../CardContainer/CardContainer'
@@ -56,7 +56,6 @@ App.propTypes = {
 const mapStateToProps = ({ fake }) => ({ fake });
 
 const mapDispatchToProps = dispatch => ({ 
-  fakeAction: () => dispatch(fakeAction()),
   addHouses: (houses) => dispatch(addHouses(houses))
 });
 
