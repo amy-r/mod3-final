@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
+import PropTypes from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
@@ -25,7 +25,7 @@ class App extends Component {
 
   toDisplay = () => {
     if (this.state.loading) {
-        return <img src ={wolf} />
+        return <img src ={wolf} alt='loading wolf' />
     } else {
       return <CardContainer />
     }
@@ -47,7 +47,7 @@ class App extends Component {
 }
 
 App.propTypes = {
-  addHouses: func.isRequired
+  addHouses: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = dispatch => ({ 

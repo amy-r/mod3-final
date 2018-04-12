@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { getMembers } from '../../helper/helper';
-import './Card.css'
+import './Card.css';
+import PropTypes from 'prop-types';
 
 class Card extends Component {
   constructor() {
@@ -51,5 +52,17 @@ class Card extends Component {
       </div>
     )
   }
+
+
 }
+Card.propTypes = {
+  name: PropTypes.string.isRequired,
+  founded: PropTypes.string.isRequired,
+  seats: PropTypes.arrayOf(PropTypes.string).isRequired,
+  titles: PropTypes.arrayOf(PropTypes.string).isRequired,
+  coatOfArms: PropTypes.string.isRequired,
+  ancestralWeapons: PropTypes.arrayOf(PropTypes.string).isRequired,
+  words: PropTypes.string.isRequired,
+  swornMembers: PropTypes.arrayOf(PropTypes.string).isRequired
+};
 export default Card;
