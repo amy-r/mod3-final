@@ -6,8 +6,10 @@ import { connect } from 'react-redux';
 import { addHouses } from '../../actions';
 import { fetchApi } from '../../helper/helper';
 import wolf from '../../wolf.gif';
-import CardContainer from '../CardContainer/CardContainer'
+import CardContainer from '../CardContainer/CardContainer';
+
 class App extends Component {
+
   constructor() {
     super();
     this.state = {
@@ -45,14 +47,11 @@ class App extends Component {
 }
 
 App.propTypes = {
-  fake: shape({ fake: string }),
-  fakeAction: func.isRequired
+  addHouses: func.isRequired
 };
-
-const mapStateToProps = ({ fake }) => ({ fake });
 
 const mapDispatchToProps = dispatch => ({ 
   addHouses: (houses) => dispatch(addHouses(houses))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);
