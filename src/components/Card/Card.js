@@ -13,12 +13,16 @@ class Card extends Component {
   }
     
   handleClick = async () => {
-    const members = await this.state.swornMembers.map( async (url)  => {
-      const response = await getMembers(url);
-      return response.name
-    })
-    const names = await Promise.all(members)
-    this.setState({ names })
+    try { 
+      const members = await this.state.swornMembers.map( async (url)  => {
+        const response = await getMembers(url);
+        return response.name
+      })
+      const names = await Promise.all(members)
+      this.setState({ names })
+    } catch (error) {
+      throw new Error('error getting members')
+    }  
   }
 
   componentDidMount = () => {
